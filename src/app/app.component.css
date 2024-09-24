@@ -1,0 +1,45 @@
+/* General layout styling */
+nz-layout {
+    min-height: 100vh;
+  }
+  
+  nz-sider {
+    background: #001529; /* Dark background for the sidebar */
+  }
+  
+  .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+  
+  /* Menu styling */
+  ul[nz-menu] {
+    border-right: 0; /* Remove right border from the menu */
+  }
+  
+  li[nz-menu-item] {
+    padding: 0 24px; /* Padding for menu items */
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+  
+  li[nz-menu-item] span[nz-icon] {
+    margin-right: 12px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+  }
+  
+  li[nz-menu-item] span strong {
+    font-size: 16px;
+    color: #fff; /* Text color */
+  }
+  
+  /* Content area styling */
+  nz-content {
+    margin: 24px 16px 0;
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+  }
+  

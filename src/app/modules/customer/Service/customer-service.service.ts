@@ -1,0 +1,35 @@
+import { HttpClient, HttpHandler, HttpHeaders } from '@angular/common/http';
+import { booleanAttribute, Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { UserStorageService } from 'src/app/auth/Service/Storage/user-storage.service';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CustomerServiceService {
+
+  baseUrl="http://localhost:8080/api";
+  constructor(private http:HttpClient) {}
+  
+  getRoom(pageNumber:number):Observable<any>{
+    return this.http.get(this.baseUrl+`/customer/getroom/${pageNumber}`,
+      {
+        headers:this.createAuthorizationHeader(),
+      });
+  }
+
+  bookRoom(reservationDto:any){
+    return this.http.post<any>(this.baseUrl+`/customer/booking/`,reservationDto,
+      {
+        headers:this.createAuthorizationHeader(),
+      });
+  }
+
+  createAuthorizationHeader() {
+    let authHeader: HttpHeaders = new HttpHeaders();
+    return authHeader.set(
+      'Authorization',
+      'Bearer ' + UserStorageService.getToken()
+    );
+  }
+}

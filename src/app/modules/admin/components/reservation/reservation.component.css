@@ -1,0 +1,58 @@
+.cnter-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  nz-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  nz-table thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  nz-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  
+  nz-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  nz-table tbody tr:hover {
+    background-color: #e6f7ff;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nz-pagination {
+    display: inline-block;
+  }
+  
+  .pagination nz-pagination .ant-pagination-item {
+    font-size: 0.9rem;
+  }  
