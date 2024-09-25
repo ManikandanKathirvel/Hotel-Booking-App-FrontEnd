@@ -46,12 +46,13 @@ export class AdminService {
       { headers: this.createAuthorizationHeader(),})
   }
 
-  getReservation(pageNumber: number): Observable<any> {
-    return this.http.get(this.baseUrl + `/admin/reservation/${pageNumber}`, {
+  getReservation(pageNo: number): Observable<any> {
+    return this.http.get(this.baseUrl + `/admin/reservation/${pageNo}`, {
       headers: this.createAuthorizationHeader(),
     });
   }
   changeReservationStatus(reservationId:number,status:string): Observable<any> {
+    console.log("reservation : "+reservationId+" : "+status)
     return this.http.get(this.baseUrl + `/admin/res/${reservationId}/${status}`, {
       headers: this.createAuthorizationHeader(),
     });

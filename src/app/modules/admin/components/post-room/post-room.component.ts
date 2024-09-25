@@ -38,5 +38,9 @@ export class PostRoomComponent {
     }
   )
   }
+  cancelForm() {
+    // Logic to cancel (reset the form)
+    this.router.navigateByUrl('/admin/dashboard')
+  }
 
 }

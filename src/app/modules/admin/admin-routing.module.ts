@@ -10,7 +10,7 @@ const routes: Routes = [{ path: '', component: AdminComponent },
   {path:'dashboard', component:DashboardComponent},
   {path:'room',component:PostRoomComponent},
   {path:'room/:id/edit',component:UpdateRoomComponent},
-  {path:'reservation',component:ReservationComponent}
+  {path:'reservations',component:ReservationComponent}
 
 ];
 

@@ -64,8 +64,8 @@ export class RoomsComponent {
       const obj={
         userId:UserStorageService.getId(),
         roomId:this.id,
-        checkIn:this.checkInDate,
-        checkOut:this.checkOutDate
+        checkInDate:this.checkInDate,
+        checkOutDate:this.checkOutDate
       }
       //console.log(obj.roomId+" :"+obj.checkIn+" : "+obj.userId+" :"+obj.checkOut);
      //console.log("error:   :"+this.customerService.bookRoom(obj))

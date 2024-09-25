@@ -20,7 +20,7 @@ export class ReservationComponent {
 
   getReservation(){
     this.adminService.getReservation(this.currentPage-1).subscribe(res=>{
-      this.reservation=res.reservationDtoList;
+      this.reservation=res.reservationDto;
       this.total=res.totalPages*5;
     })
   }

@@ -6,10 +6,11 @@ import { CustomerComponent } from './customer.component';
 import { DemoNgZarroAntdModule } from 'src/app/DemoNgZarroAntdModule';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RoomsComponent } from './component/rooms/rooms.component';
+import { ViewBookingsComponent } from './component/view-bookings/view-bookings.component';
 
 
 @NgModule({
-  declarations: [CustomerComponent, RoomsComponent],
+  declarations: [CustomerComponent, RoomsComponent, ViewBookingsComponent],
   imports: [
     CommonModule,
     CustomerRoutingModule,
