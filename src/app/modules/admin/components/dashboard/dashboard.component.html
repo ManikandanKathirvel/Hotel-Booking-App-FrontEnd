@@ -7,15 +7,15 @@
             <nz-card style="width: 300px;margin: 16px" [nzActions]="[actionEdit,actionDelete]">
                <nz-skeleton [nzActive]="true" [nzLoading]="loading" [nzAvatar]="{size:'large'}">
                   <nz-card-meta [nzAvatar]="avatarTemplate" nzTitle="{{room.name}}"
-                    nzDescription="type:{{room.type}}">
+                    nzDescription="Type:{{room.type}}">
                   </nz-card-meta>
-                  <nz-card-meta style="margin-left: 49px"nzDescription="price:{{room.price}}">
+                  <nz-card-meta style="margin-left: 49px"nzDescription="Price:{{room.price}}">
                   </nz-card-meta>
                </nz-skeleton>
             </nz-card>
 
             <ng-template #avatarTemplate>
-                <nz-avatar nzSrc="  "></nz-avatar>
+                <nz-avatar nzSrc="https://cache.marriott.com/marriottassets/marriott/KULDT/kuldt-guestroom-0065-hor-clsc.jpg?interpolation=progressive-bilinear&"></nz-avatar>
             </ng-template>
             <ng-template #actionEdit>
                 <span nz-icon nzType="edit" [nzTheme]="'twotone'" class="icon edit-icon" routerLink="/admin/room/{{room.id}}/edit" >Edit </span>

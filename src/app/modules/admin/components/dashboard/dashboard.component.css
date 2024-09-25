@@ -1,38 +1,80 @@
+
 .center-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+/* Button styling */
 .post-room-btn {
-  margin-bottom: 20px;
+  background-color: #1890ff; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 20px;
+  font-size: 16px;
+  margin-bottom: 20px; /* Space below the button */
+  transition: background-color 0.3s ease;
 }
 
+.post-room-btn:hover {
+  background-color: #40a9ff; /* Darker shade on hover */
+}
+
+/* Room container and row styling */
 .room-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: wrap; /* Wraps cards to the next line */
+  justify-content: center; /* Center cards horizontally */
 }
 
 .room-row {
-  margin: 10px;
-}
-
-.icon {
-  cursor: pointer;
-}
-
-.edit-icon {
-  color: #1890ff;
-}
-
-.delete-icon {
-  color: #ff4d4f;
-}
-
-.pagination-container {
-  margin-top: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card styling */
+.nz-card {
+  border-radius: 10px; /* Rounded corners for cards */
+  overflow: hidden; /* Ensures content doesn't spill out */
+  transition: transform 0.2s ease;
+}
+
+.nz-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.nz-skeleton {
+  margin-bottom: 16px; /* Space between skeletons */
+}
+
+/* Avatar styling */
+.nz-avatar {
+  border-radius: 50%; /* Circular avatar */
+  width: 60px; /* Avatar size */
+  height: 60px; /* Avatar size */
+}
+
+/* Icon styling */
+.icon {
+  cursor: pointer; /* Pointer cursor for clickable icons */
+  font-size: 18px; /* Icon size */
+  color: #1890ff; /* Icon color */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.icon:hover {
+  color: #40a9ff; /* Darker shade on hover */
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 20px; /* Space above pagination */
+  display: flex;
+  justify-content: center; /* Center pagination */
 }
